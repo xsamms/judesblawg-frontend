@@ -4,3 +4,8 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+  [[redirects]]
+  from = "/*"
+  to = "/pages/_app.jsx"
+  status = 200
