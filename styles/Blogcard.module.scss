@@ -1,0 +1,48 @@
+.card {
+  max-width: 20rem;
+  max-height: 30rem;
+  background-color: #eee;
+  margin-bottom: 2rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .catdate {
+    display: flex;
+    padding: 0 1rem 1rem;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #333;
+  }
+
+  .titails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 5px;
+  }
+
+  .title {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn_details {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 3px;
+    border-bottom: 1px solid #333;
+
+    &:hover {
+      background-color: #202125;
+      color: #f3f0ee;
+    }
+  }
+}
+
+.hey {
+  margin-right: 1rem;
+}

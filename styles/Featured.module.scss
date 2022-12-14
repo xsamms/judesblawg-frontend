@@ -1,0 +1,17 @@
+.featured_post {
+  display: flex;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1rem;
+
+  .feat_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2px;
+
+    .feat_date {
+      font-size: 0.7rem;
+    }
+  }
+}

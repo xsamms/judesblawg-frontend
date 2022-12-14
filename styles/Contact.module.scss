@@ -1,0 +1,43 @@
+.container {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  grid-row-gap: 0.5em;
+  margin-bottom: 2rem;
+
+  h1 {
+    text-transform: uppercase;
+  }
+}
+
+.label {
+  font-size: 1.2em;
+}
+.input_text,
+.input_email,
+.textarea {
+  font-size: 1rem;
+  padding: 10px;
+}
+.textarea {
+  min-height: 10rem;
+}
+.btn {
+  width: 100%;
+  margin: 0 auto;
+  color: #f3f0ee;
+  background-color: #202125;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #202125d3;
+  }
+}

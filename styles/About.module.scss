@@ -1,0 +1,41 @@
+.heading {
+  padding: 0 2rem;
+}
+.container {
+  padding: 0 2rem;
+  display: flex;
+
+  @media only screen and (max-width: 34.375em) {
+    display: block;
+    padding: 0 1rem;
+  }
+
+  @media only screen and (max-width: 26.25em) {
+    display: block;
+    padding: 0 1rem;
+  }
+
+  .main {
+    flex: 0 0 50%;
+    padding-right: 1rem;
+  }
+
+  .side {
+    position: relative;
+    width: 549px;
+    height: 640px;
+    margin-bottom: 20px;
+
+    @media only screen and (max-width: 34.375em) {
+      width: 400px;
+      height: 500px;
+      margin-bottom: 20px;
+    }
+
+    @media only screen and (max-width: 26.25em) {
+      width: 350px;
+      height: 400px;
+      margin-bottom: 20px;
+    }
+  }
+}
