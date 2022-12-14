@@ -28,7 +28,7 @@ export default function SingleBlog({ blog, category, featured }) {
     return (
       <>
         <DisqusThread
-          id={blog.data[0].id}
+          id={blog.data[0].slug}
           path={blog.data[0].attributes.slug}
           title={blog.data[0].attributes.title}
         />
