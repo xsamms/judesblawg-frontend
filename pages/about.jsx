@@ -27,7 +27,7 @@ export default function about() {
           </p>
         </div>
         <div className={styles.side}>
-          <Image src="/gavels.png" fill />
+          <Image src="/gavels.png" fill alt="" />
         </div>
       </div>
     </Layout>
