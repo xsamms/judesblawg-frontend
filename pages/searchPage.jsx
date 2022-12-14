@@ -25,9 +25,9 @@ export default function searchPage({ search }) {
               </div>
               <div className={styles.search_content}>
                 <h2>{arch.attributes.title}</h2>
-                <ReactMarkdown
-                  children={arch.attributes.content.slice(0, 500)}
-                />
+                <ReactMarkdown>
+                  {arch.attributes.content.slice(0, 500)}
+                </ReactMarkdown>
                 <div className={styles.more}>
                   <Link href={arch.attributes.slug}>Read more</Link>
                 </div>

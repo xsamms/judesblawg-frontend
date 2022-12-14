@@ -82,7 +82,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.copyright}>
-        ©2022 Jude's Blawg. All rights reserved. Developed by{" "}
+        ©2022 Jude&apos;s Blawg. All rights reserved. Developed by{" "}
         <Link
           href="www.datamegathos.com"
           target="_blank"

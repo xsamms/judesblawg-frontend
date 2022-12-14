@@ -10,7 +10,7 @@ export default function Header() {
     <div className={styles.header}>
       <div>
         <Link href="/">
-          <Image src="/logo3.png" width={300} height={40} />
+          <Image src="/logo3.png" width={300} height={40} alt="" />
         </Link>
       </div>
       <div className={styles.search}>

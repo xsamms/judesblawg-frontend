@@ -10,7 +10,7 @@ import FeaturedPost from "../components/FeaturedPost";
 import Pagination from "../components/Pagination";
 import { paginate } from "../utils/paginate";
 
-export default function blog({ posts, category, featured }) {
+export default function Blog({ posts, category, featured }) {
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 5;
 
@@ -40,9 +40,9 @@ export default function blog({ posts, category, featured }) {
                     {moment(arch.attributes.date).format("MMM DD YYYY")}
                   </div>
                   <h2>{arch.attributes.title}</h2>
-                  <ReactMarkdown
-                    children={arch.attributes.content.slice(0, 350)}
-                  />
+                  <ReactMarkdown>
+                    {arch.attributes.content.slice(0, 350)}
+                  </ReactMarkdown>
                   <Link href={arch.attributes.slug}>
                     <span className={styles.more}>Read more &rarr;</span>
                   </Link>
