@@ -8,7 +8,7 @@ export default function adenijiKazeemSAN() {
       <div style={{ padding: "5rem", textAlign: "center" }}>
         <h2>Adeniji Kazeem SAN</h2>
         <div className={styles.adeniji}>
-          <Image src="/Adeniji-Kazeem-SAN.jpeg" fill />
+          <Image src="/Adeniji-Kazeem-SAN.jpeg" fill alt="" />
         </div>
       </div>
     </Layout>

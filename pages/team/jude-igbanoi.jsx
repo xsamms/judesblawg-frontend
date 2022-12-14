@@ -8,7 +8,7 @@ export default function judeIgbanoi() {
       <div style={{ padding: "5rem", textAlign: "center" }}>
         <h2>Jude Igbanoi</h2>
         <div className={styles.jude}>
-          <Image src="/jude.png" fill />
+          <Image src="/jude.png" fill alt="" />
         </div>
       </div>
     </Layout>

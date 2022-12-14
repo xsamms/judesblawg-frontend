@@ -8,7 +8,7 @@ export default function samZibiriSAN() {
       <div style={{ padding: "5rem", textAlign: "center" }}>
         <h2>Sam Zibiri SAN</h2>
         <div className={styles.sam}>
-          <Image src="/Sam-Ziibiri-SAN.jpeg" fill />
+          <Image src="/Sam-Ziibiri-SAN.jpeg" fill alt="" />
         </div>
       </div>
     </Layout>

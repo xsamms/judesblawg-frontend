@@ -8,7 +8,7 @@ export default function profChidiOdinkalu() {
       <div style={{ padding: "5rem", textAlign: "center" }}>
         <h2>Prof Chidi Odinkalu</h2>
         <div className={styles.chidi}>
-          <Image src="/Prof-Chidi-Odinkalu.jpeg" fill />
+          <Image src="/Prof-Chidi-Odinkalu.jpeg" fill alt="" />
         </div>
       </div>
     </Layout>

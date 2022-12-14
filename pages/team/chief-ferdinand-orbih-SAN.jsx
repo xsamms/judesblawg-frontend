@@ -8,7 +8,7 @@ export default function chiefFerdinandOrbihSAN() {
       <div style={{ padding: "5rem", textAlign: "center" }}>
         <h2>Chief Ferdinand Orbih SAN</h2>
         <div className={styles.ferdinand}>
-          <Image src="/Chief-Ferdinand-Orbih-SAN.jpeg" fill />
+          <Image src="/Chief-Ferdinand-Orbih-SAN.jpeg" fill alt="" />
         </div>
       </div>
     </Layout>

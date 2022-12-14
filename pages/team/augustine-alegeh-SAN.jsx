@@ -8,7 +8,7 @@ export default function augustineAlegehSan() {
       <div style={{ padding: "5rem", textAlign: "center" }}>
         <h2>Augustine Alegeh SAN - Chairman</h2>
         <div className={styles.augustine}>
-          <Image src="/Augustine-Alegeh-SAN.jpeg" fill />
+          <Image src="/Augustine-Alegeh-SAN.jpeg" fill alt="" />
         </div>
       </div>
     </Layout>

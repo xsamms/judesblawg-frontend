@@ -8,7 +8,7 @@ export default function opeOlugasa() {
       <div style={{ padding: "5rem", textAlign: "center" }}>
         <h2>Ope Olugasa</h2>
         <div className={styles.ope}>
-          <Image src="/Mr.-Ope-Olugasa.jpeg" fill />
+          <Image src="/Mr.-Ope-Olugasa.jpeg" fill alt="" />
         </div>
       </div>
     </Layout>

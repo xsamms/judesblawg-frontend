@@ -8,7 +8,7 @@ export default function onyemaOmenuwaEsq() {
       <div style={{ padding: "5rem", textAlign: "center" }}>
         <h2>Onyema Omenuwa Esq.</h2>
         <div className={styles.onyema}>
-          <Image src="/Onyema-Omenuwa.jpeg" fill />
+          <Image src="/Onyema-Omenuwa.jpeg" fill alt="" />
         </div>
       </div>
     </Layout>

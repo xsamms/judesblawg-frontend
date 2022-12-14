@@ -8,7 +8,7 @@ export default function johnUnachukwuEsq() {
       <div style={{ padding: "5rem", textAlign: "center" }}>
         <h2>John Unachukwu Esq.</h2>
         <div className={styles.john}>
-          <Image src="/John-Austin-Unachukwu.jpeg" fill />
+          <Image src="/John-Austin-Unachukwu.jpeg" fill alt="" />
         </div>
       </div>
     </Layout>

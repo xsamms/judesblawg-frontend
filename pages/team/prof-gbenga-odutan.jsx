@@ -8,7 +8,7 @@ export default function profGbengaOdutan() {
       <div style={{ padding: "5rem", textAlign: "center" }}>
         <h2>Prof. Gbenga Odutan</h2>
         <div className={styles.gbenga}>
-          <Image src="/Prof-Gbenga-Odutan.jpeg" fill />
+          <Image src="/Prof-Gbenga-Odutan.jpeg" fill alt="" />
         </div>
       </div>
     </Layout>

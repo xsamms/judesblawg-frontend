@@ -8,7 +8,7 @@ export default function edoUkpongEsq() {
       <div style={{ padding: "5rem", textAlign: "center" }}>
         <h2>Edo Ukpong Esq.</h2>
         <div className={styles.edo}>
-          <Image src="/Mr.-Edo-Ukpong-Esq.jpeg" fill />
+          <Image src="/Mr.-Edo-Ukpong-Esq.jpeg" fill alt="" />
         </div>
       </div>
     </Layout>

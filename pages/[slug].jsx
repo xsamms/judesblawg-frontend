@@ -48,7 +48,7 @@ export default function SingleBlog({ blog, category, featured }) {
               fill
             />
           </div>
-          <ReactMarkdown children={blog.data[0].attributes.content} />
+          <ReactMarkdown>{blog.data[0].attributes.content}</ReactMarkdown>
           <div>
             <FacebookShareButton
               url={`${API_URI}/${blog.data[0].attributes.slug}`}
