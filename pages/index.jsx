@@ -1,11 +1,11 @@
-import Layout from "../components/Layout";
+import Layout from "@components/Layout";
 import Link from "next/link";
 import Image from "next/image";
-import Hero from "../components/Hero";
-import styles from "../styles/Home.module.scss";
+import Hero from "@components/Hero";
+import styles from "@styles/Home.module.scss";
 import { API_URI } from "../config";
-import BlogCard from "../components/BlogCard";
-import FeaturedPost from "../components/FeaturedPost";
+import BlogCard from "@components/BlogCard";
+import FeaturedPost from "@components/FeaturedPost";
 
 export default function Home({ posts, category, featured }) {
   return (

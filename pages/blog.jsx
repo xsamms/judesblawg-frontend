@@ -1,13 +1,13 @@
 import { useState } from "react";
-import Layout from "../components/Layout";
+import Layout from "@components/Layout";
 import { API_URI } from "../config";
 import Image from "next/image";
 import Link from "next/link";
 import moment from "moment";
 import ReactMarkdown from "react-markdown";
-import styles from "../styles/Blog.module.scss";
-import FeaturedPost from "../components/FeaturedPost";
-import Pagination from "../components/Pagination";
+import styles from "@styles/Blog.module.scss";
+import FeaturedPost from "@components/FeaturedPost";
+import Pagination from "@components/Pagination";
 import { paginate } from "../utils/paginate";
 
 export default function Blog({ posts, category, featured }) {

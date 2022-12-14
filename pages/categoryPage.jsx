@@ -1,10 +1,10 @@
-import Layout from "../components/Layout";
+import Layout from "@components/Layout";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../styles/Home.module.scss";
+import styles from "@styles/Home.module.scss";
 import { API_URI } from "../config";
-import BlogCard from "../components/BlogCard";
-import FeaturedPost from "../components/FeaturedPost";
+import BlogCard from "@components/BlogCard";
+import FeaturedPost from "@components/FeaturedPost";
 
 export default function categoryPage({ cate, categories, featured }) {
   return (

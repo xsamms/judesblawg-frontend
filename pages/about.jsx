@@ -1,6 +1,6 @@
-import Layout from "../components/Layout";
+import Layout from "@components/Layout";
 import Image from "next/image";
-import styles from "../styles/About.module.scss";
+import styles from "@styles/About.module.scss";
 
 export default function about() {
   return (

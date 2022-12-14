@@ -1,11 +1,11 @@
-import Layout from "../components/Layout";
+import Layout from "@components/Layout";
 import { API_URI } from "../config";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../styles/Singleblog.module.scss";
+import styles from "@styles/Singleblog.module.scss";
 import ReactMarkdown from "react-markdown";
-import FeaturedPost from "../components/FeaturedPost";
-import DisqusThread from "../components/DisqusThread";
+import FeaturedPost from "@components/FeaturedPost";
+import DisqusThread from "@components/DisqusThread";
 import {
   FacebookShareButton,
   FacebookIcon,

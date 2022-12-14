@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import Head from "next/head";
 import { useRouter } from "next/router";
-import styles from "../styles/Contact.module.scss";
-import Layout from "../components/Layout";
+import styles from "@styles/Contact.module.scss";
+import Layout from "@components/Layout";
 
 const ContactPage = () => {
   const [submitterName, setSubmitterName] = useState("");

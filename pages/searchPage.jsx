@@ -1,9 +1,9 @@
-import Layout from "../components/Layout";
+import Layout from "@components/Layout";
 import { API_URI } from "../config";
 import Image from "next/image";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
-import styles from "../styles/Search.module.scss";
+import styles from "@styles/Search.module.scss";
 
 export default function searchPage({ search }) {
   return (
