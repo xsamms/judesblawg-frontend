@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     domains: ["res.cloudinary.com"],
   },
+  experimental: {
+    largePageDataBytes: 128 * 100000,
+  },
 };
 
 module.exports = nextConfig;
