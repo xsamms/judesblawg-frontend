@@ -162,6 +162,6 @@ export async function getStaticProps({ params: { slug } }) {
       category,
       featured,
     },
-    revalidate: 1,
+    revalidate: 10,
   };
 }
