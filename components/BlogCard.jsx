@@ -5,6 +5,9 @@ import styles from "../styles/Blogcard.module.scss";
 
 export default function BlogCard({ item }) {
   // let contents = markdownToHtml(item.attributes.content);
+  // {
+  //   console.log(item.attributes.category.data.id);
+  // }
   return (
     <Link href={item.attributes.slug} className={styles.card}>
       <div className={styles.card_img}>
@@ -17,7 +20,7 @@ export default function BlogCard({ item }) {
       </div>
 
       <div className={styles.catdate}>
-        <div>{item.attributes.category.data.attributes.name}</div>
+        {/* <div>{item.attributes.category.data.attributes.name}</div> */}
         <div>{moment(item.attributes.date).format("MMM DD YYYY")}</div>
       </div>
       <div className={styles.titails}>
