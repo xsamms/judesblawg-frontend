@@ -51,37 +51,39 @@ export default function SingleBlog({ blog, category, featured }) {
           <ReactMarkdown>{blog.data[0].attributes.content}</ReactMarkdown>
           <div>
             <FacebookShareButton
-              url={`${API_URI}/${blog.data[0].attributes.slug}`}
+              url={`https://judesblawg.com/${blog.data[0].attributes.slug}`}
             >
               <FacebookIcon size={32} round />
             </FacebookShareButton>
             <PinterestShareButton
-              url={`${API_URI}/${blog.data[0].attributes.slug}`}
+              url={`https://judesblawg.com/${blog.data[0].attributes.slug}`}
             >
               <PinterestIcon size={32} round />
             </PinterestShareButton>
             <RedditShareButton
-              url={`${API_URI}/${blog.data[0].attributes.slug}`}
+              url={`https://judesblawg.com/${blog.data[0].attributes.slug}`}
             >
               <RedditIcon size={32} round />
             </RedditShareButton>
             <WhatsappShareButton
-              url={`${API_URI}/${blog.data[0].attributes.slug}`}
+              media={blog.data[0].attributes.featured_image.data.attributes.url}
+              title={blog.data[0].attributes.name}
+              url={`https://judesblawg.com/${blog.data[0].attributes.slug}`}
             >
               <WhatsappIcon size={32} round />
             </WhatsappShareButton>
             <LinkedinShareButton
-              url={`${API_URI}/${blog.data[0].attributes.slug}`}
+              url={`https://judesblawg.com/${blog.data[0].attributes.slug}`}
             >
               <LinkedinIcon size={32} round />
             </LinkedinShareButton>
             <TelegramShareButton
-              url={`${API_URI}/${blog.data[0].attributes.slug}`}
+              url={`https://judesblawg.com/${blog.data[0].attributes.slug}`}
             >
               <TelegramIcon size={32} round />
             </TelegramShareButton>
             <TwitterShareButton
-              url={`${API_URI}/${blog.data[0].attributes.slug}`}
+              url={`https://judesblawg.com/${blog.data[0].attributes.slug}`}
             >
               <TwitterIcon size={32} round />
             </TwitterShareButton>
@@ -135,7 +137,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 }
 
