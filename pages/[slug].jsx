@@ -51,11 +51,21 @@ export default function SingleBlog({ blog, category, featured }) {
           <ReactMarkdown>{blog.data[0].attributes.content}</ReactMarkdown>
           <div>
             <FacebookShareButton
+              media={
+                blog.data[0].attributes.featured_image.data.attributes.formats
+                  .thumbnail.url
+              }
+              title={blog.data[0].attributes.name}
               url={`https://judesblawg.com/${blog.data[0].attributes.slug}`}
             >
               <FacebookIcon size={32} round />
             </FacebookShareButton>
             <PinterestShareButton
+              media={
+                blog.data[0].attributes.featured_image.data.attributes.formats
+                  .thumbnail.url
+              }
+              title={blog.data[0].attributes.name}
               url={`https://judesblawg.com/${blog.data[0].attributes.slug}`}
             >
               <PinterestIcon size={32} round />
@@ -66,23 +76,41 @@ export default function SingleBlog({ blog, category, featured }) {
               <RedditIcon size={32} round />
             </RedditShareButton>
             <WhatsappShareButton
-              media={blog.data[0].attributes.featured_image.data.attributes.url}
+              media={
+                blog.data[0].attributes.featured_image.data.attributes.formats
+                  .thumbnail.url
+              }
               title={blog.data[0].attributes.name}
               url={`https://judesblawg.com/${blog.data[0].attributes.slug}`}
             >
               <WhatsappIcon size={32} round />
             </WhatsappShareButton>
             <LinkedinShareButton
+              media={
+                blog.data[0].attributes.featured_image.data.attributes.formats
+                  .thumbnail.url
+              }
+              title={blog.data[0].attributes.name}
               url={`https://judesblawg.com/${blog.data[0].attributes.slug}`}
             >
               <LinkedinIcon size={32} round />
             </LinkedinShareButton>
             <TelegramShareButton
+              media={
+                blog.data[0].attributes.featured_image.data.attributes.formats
+                  .thumbnail.url
+              }
+              title={blog.data[0].attributes.name}
               url={`https://judesblawg.com/${blog.data[0].attributes.slug}`}
             >
               <TelegramIcon size={32} round />
             </TelegramShareButton>
             <TwitterShareButton
+              media={
+                blog.data[0].attributes.featured_image.data.attributes.formats
+                  .thumbnail.url
+              }
+              title={blog.data[0].attributes.name}
               url={`https://judesblawg.com/${blog.data[0].attributes.slug}`}
             >
               <TwitterIcon size={32} round />
@@ -137,7 +165,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: false,
+    fallback: "blocking",
   };
 }
 
