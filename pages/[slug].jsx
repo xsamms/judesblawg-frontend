@@ -109,18 +109,18 @@ export default function SingleBlog({ blog, category, featured }) {
             </TwitterShareButton>
             <div
               id="whatsApp-share"
-              style={{ display: "flex", padding: "0px", marginLeft: "-5px" }}
+              style={{
+                display: "inline-block",
+                marginLeft: "-5px",
+              }}
             >
               <a
                 href={`whatsapp://send?text=https://judesblawg.com/${blog.data[0].attributes.slug}`}
                 data-action="share/whatsapp/share"
               >
-                <Image
-                  src="/whatsapp-icon.png"
-                  width={42}
-                  height={42}
-                  alt="WhatsApp"
-                />
+                <div className={styles.whatsappImg}>
+                  <Image src="/whatsapp-icon.png" fill alt="WhatsApp" />
+                </div>
               </a>
             </div>
           </div>
@@ -182,7 +182,6 @@ export async function getStaticProps({ params: { slug } }) {
     `${API_URI}/api/posts?filters[slug][$eq]=${slug}&populate=*`
   );
   const blog = await res.json();
-  console.log(blog);
 
   const cat = await fetch(`${API_URI}/api/categories`);
   const category = await cat.json();
