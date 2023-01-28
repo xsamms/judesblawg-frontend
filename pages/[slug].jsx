@@ -119,7 +119,12 @@ export default function SingleBlog({ blog, category, featured }) {
                 data-action="share/whatsapp/share"
               >
                 <div className={styles.whatsappImg}>
-                  <Image src="/whatsapp-icon.png" fill alt="WhatsApp" />
+                  <img
+                    src="whatsapp-icon.png"
+                    alt="WhatsApp"
+                    width="42px"
+                    height="42px"
+                  />
                 </div>
               </a>
             </div>
