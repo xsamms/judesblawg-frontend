@@ -111,21 +111,19 @@ export default function SingleBlog({ blog, category, featured }) {
               id="whatsApp-share"
               style={{
                 display: "inline-block",
-                marginLeft: "-5px",
+                marginLeft: "-1px",
               }}
             >
               <a
                 href={`whatsapp://send?text=https://judesblawg.com/${blog.data[0].attributes.slug}`}
                 data-action="share/whatsapp/share"
               >
-                <div className={styles.whatsappImg}>
-                  <img
-                    src="whatsapp-icon.png"
-                    alt="WhatsApp"
-                    width="42px"
-                    height="42px"
-                  />
-                </div>
+                <img
+                  src="whatsapp-icon.jpg"
+                  alt="WhatsApp"
+                  width="32px"
+                  height="32px"
+                />
               </a>
             </div>
           </div>
