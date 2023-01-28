@@ -115,7 +115,12 @@ export default function SingleBlog({ blog, category, featured }) {
                 href={`whatsapp://send?text=https://judesblawg.com/${blog.data[0].attributes.slug}`}
                 data-action="share/whatsapp/share"
               >
-                <Image src="/whatsapp-icon.png" width={42} height={42} />
+                <Image
+                  src="/whatsapp-icon.png"
+                  width={42}
+                  height={42}
+                  alt="WhatsApp"
+                />
               </a>
             </div>
           </div>
