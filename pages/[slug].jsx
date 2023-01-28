@@ -13,8 +13,6 @@ import {
   PinterestIcon,
   RedditShareButton,
   RedditIcon,
-  WhatsappShareButton,
-  WhatsappIcon,
   LinkedinShareButton,
   LinkedinIcon,
   TelegramShareButton,
@@ -37,7 +35,11 @@ export default function SingleBlog({ blog, category, featured }) {
   };
 
   return (
-    <Layout title={`${blog.data[0].attributes.title} - Jude's Blawg`}>
+    <Layout
+      title={`${blog.data[0].attributes.title} - Jude's Blawg`}
+      url={`https://judesblawg.com/${blog.data[0].attributes.slug}`}
+      img={blog.data[0].attributes.featured_image.data.attributes.url}
+    >
       <div className={styles.container}>
         <div className={styles.main}>
           <h1>{blog.data[0].attributes.title}</h1>
@@ -49,7 +51,7 @@ export default function SingleBlog({ blog, category, featured }) {
             />
           </div>
           <ReactMarkdown>{blog.data[0].attributes.content}</ReactMarkdown>
-          <div>
+          <div style={{ display: "flex" }}>
             <FacebookShareButton
               media={
                 blog.data[0].attributes.featured_image.data.attributes.formats
@@ -75,16 +77,6 @@ export default function SingleBlog({ blog, category, featured }) {
             >
               <RedditIcon size={32} round />
             </RedditShareButton>
-            <WhatsappShareButton
-              media={
-                blog.data[0].attributes.featured_image.data.attributes.formats
-                  .thumbnail.url
-              }
-              title={blog.data[0].attributes.name}
-              url={`https://judesblawg.com/${blog.data[0].attributes.slug}`}
-            >
-              <WhatsappIcon size={32} round />
-            </WhatsappShareButton>
             <LinkedinShareButton
               media={
                 blog.data[0].attributes.featured_image.data.attributes.formats
@@ -115,6 +107,17 @@ export default function SingleBlog({ blog, category, featured }) {
             >
               <TwitterIcon size={32} round />
             </TwitterShareButton>
+            <div
+              id="whatsApp-share"
+              style={{ display: "flex", padding: "0px", marginLeft: "-5px" }}
+            >
+              <a
+                href={`whatsapp://send?text=https://judesblawg.com/${blog.data[0].attributes.slug}`}
+                data-action="share/whatsapp/share"
+              >
+                <Image src="/whatsapp-icon.png" width={42} height={42} />
+              </a>
+            </div>
           </div>
           {showDisqusComment()}
         </div>
