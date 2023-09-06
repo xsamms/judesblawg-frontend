@@ -12,6 +12,9 @@ export default function Home({ posts, category, featured }) {
     <Layout>
       <Hero />
       <main className={styles.container}>
+        <div className={styles.bripan}>
+      <Image src="/bripan.png" fill alt="BRIPAN" />
+      </div>
         <h2>Latest news</h2>
         <div className={styles.content}>
           <div className={styles.main_content}>

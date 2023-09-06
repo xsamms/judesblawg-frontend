@@ -9,6 +9,24 @@
     padding: 0 2rem;
   }
 
+  .bripan {
+    position: relative;
+    width: 48rem;
+    height: 16rem;
+    margin: auto;
+    
+
+    @media only screen and (max-width: 34.375em) {
+      width: 24rem;
+      height: 8rem;
+    }
+  
+    @media only screen and (max-width: 26.25em) {
+      width: 17rem;
+      height: 5rem;
+    }
+  }
+
   .content {
     display: flex;
 
